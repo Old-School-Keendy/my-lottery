@@ -26,6 +26,15 @@
         <!-- Base -->
         <jdk.version>1.8</jdk.version>
         <sourceEncoding>UTF-8</sourceEncoding>
+        <lottery-infrastructure.version>1.0.0-SNAPSHOT</lottery-infrastructure.version>
+        <lottery-rpc.version>1.0.0-SNAPSHOT</lottery-rpc.version>
+        <dubbo-spring-boot-starter.version>2.7.1</dubbo-spring-boot-starter.version>
+        <dubbo.version>2.7.1</dubbo.version>
+        <junit.version>4.12</junit.version>
+        <commons-lang3.version>3.8</commons-lang3.version>
+        <fastjson.version>1.2.58</fastjson.version>
+        <mysql-connector-java.version>5.1.34</mysql-connector-java.version>
+        <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
     </properties>
 
     <parent>

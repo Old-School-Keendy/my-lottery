@@ -2,14 +2,14 @@ package cn.keendy.lottery.interfaces;
 
 import javax.annotation.Resource;
 
-import cn.itedus.lottery.common.Constants;
-import cn.itedus.lottery.common.Result;
-import cn.itedus.lottery.infrastructure.dao.IActivityDao;
-import cn.itedus.lottery.infrastructure.po.Activity;
-import cn.itedus.lottery.rpc.IActivityBooth;
-import cn.itedus.lottery.rpc.dto.ActivityDto;
-import cn.itedus.lottery.rpc.req.ActivityReq;
-import cn.itedus.lottery.rpc.res.ActivityRes;
+import cn.keendy.lottery.common.Constants;
+import cn.keendy.lottery.common.Result;
+import cn.keendy.lottery.infrastructure.dao.IActivityDao;
+import cn.keendy.lottery.infrastructure.po.Activity;
+import cn.keendy.lottery.rpc.IActivityBooth;
+import cn.keendy.lottery.rpc.dto.ActivityDto;
+import cn.keendy.lottery.rpc.req.ActivityReq;
+import cn.keendy.lottery.rpc.res.ActivityRes;
 import org.springframework.stereotype.Service;
 
 /**

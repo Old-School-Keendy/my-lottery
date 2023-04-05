@@ -1,7 +1,7 @@
 package cn.keendy.lottery.rpc.res;
 
-import cn.itedus.lottery.common.Result;
-import cn.itedus.lottery.rpc.dto.ActivityDto;
+import cn.keendy.lottery.rpc.dto.ActivityDto;
+import cn.keendy.lottery.common.Result;
 
 import java.io.Serializable;
 
