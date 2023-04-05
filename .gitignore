@@ -1,4 +1,5 @@
 /.idea/
+/target/
 /Lottery.iml
 /lottery-application/lottery-application.iml
 /lottery-common/lottery-common.iml
