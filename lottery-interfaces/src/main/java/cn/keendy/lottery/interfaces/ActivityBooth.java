@@ -10,7 +10,7 @@ import cn.keendy.lottery.rpc.IActivityBooth;
 import cn.keendy.lottery.rpc.dto.ActivityDto;
 import cn.keendy.lottery.rpc.req.ActivityReq;
 import cn.keendy.lottery.rpc.res.ActivityRes;
-import org.springframework.stereotype.Service;
+import org.apache.dubbo.config.annotation.Service;
 
 /**
  * @author wangdezhao
