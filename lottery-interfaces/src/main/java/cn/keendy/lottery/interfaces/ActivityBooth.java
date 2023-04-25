@@ -10,14 +10,14 @@ import cn.keendy.lottery.rpc.IActivityBooth;
 import cn.keendy.lottery.rpc.dto.ActivityDto;
 import cn.keendy.lottery.rpc.req.ActivityReq;
 import cn.keendy.lottery.rpc.res.ActivityRes;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
  * @author wangdezhao
  * @date 2023/4/5
  * @description 活动展台
  */
-@Service
+@DubboService
 public class ActivityBooth implements IActivityBooth {
     @Resource
     private IActivityDao activityDao;
