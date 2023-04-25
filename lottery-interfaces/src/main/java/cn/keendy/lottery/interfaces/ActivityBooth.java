@@ -24,7 +24,7 @@ public class ActivityBooth implements IActivityBooth {
 
     @Override
     public ActivityRes queryActivityById(ActivityReq req) {
-        Activity activity = activityDao.queryActivityById(req.getActivityId());
+        Activity activity = activityDao.selectOneByActivityId(req.getActivityId());
 
         ActivityDto activityDto = new ActivityDto();
         activityDto.setActivityId(activity.getActivityId());

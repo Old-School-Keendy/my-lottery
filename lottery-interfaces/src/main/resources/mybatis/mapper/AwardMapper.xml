@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.keendy.lottery.infrastructure.dao.IAwardDao">
+
+    <resultMap id="award" type="cn.keendy.lottery.infrastructure.po.Award">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="award_id" property="awardId" jdbcType="BIGINT"/>
+        <id column="award_type" property="awardName" jdbcType="INTEGER"/>
+        <id column="award_count" property="awardCount" jdbcType="INTEGER"/>
+        <id column="award_name" property="awardName" jdbcType="VARCHAR"/>
+        <id column="award_content" property="awardContent" jdbcType="VARCHAR"/>
+        <id column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <id column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="base_column">
+        id, award_id, award_type, award_count, award_name, award_content, create_time, update_time
+    </sql>
+
+    <select id="selectOneById" parameterType="java.lang.Long" resultMap="award">
+        SELECT
+                id, awardId, awardType, awardCount, awardName, awardContent, createTime, updateTime
+        FROM award
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectOneByAwardId" parameterType="java.lang.Long" resultMap="award">
+        SELECT
+        id, awardId, awardType, awardCount, awardName, awardContent, createTime, updateTime
+        FROM award
+        WHERE awardId = #{awardId}
+    </select>
+
+</mapper>
