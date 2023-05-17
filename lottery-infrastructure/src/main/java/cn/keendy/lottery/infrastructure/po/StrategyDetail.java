@@ -3,6 +3,7 @@ package cn.keendy.lottery.infrastructure.po;
 import java.math.BigDecimal;
 
 import lombok.Data;
+import lombok.ToString;
 
 /**
  * @author wangdezhao
@@ -10,6 +11,7 @@ import lombok.Data;
  * @description
  */
 @Data
+@ToString
 public class StrategyDetail {
     // 自增ID
     private String id;

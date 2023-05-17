@@ -27,6 +27,14 @@ public class ActivityRes implements Serializable {
         this.activity = activity;
     }
 
+    @Override
+    public String toString() {
+        return "ActivityRes{" +
+            "result=" + result +
+            ", activity=" + activity +
+            '}';
+    }
+
     public Result getResult() {
         return result;
     }

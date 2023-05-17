@@ -4,12 +4,19 @@ import java.io.Serializable;
 
 /**
  * @author wangdezhao
- * @date 2023/4/5
- * 统一返回对象中，Code码、Info描述
+ * @date 2023/4/5 统一返回对象中，Code码、Info描述
  */
-public class Result implements Serializable{
+public class Result implements Serializable {
     private String code;
     private String info;
+
+    @Override
+    public String toString() {
+        return "Result{" +
+            "code='" + code + '\'' +
+            ", info='" + info + '\'' +
+            '}';
+    }
 
     public static Result buildResult(String code, String info) {
         return new Result(code, info);

@@ -11,6 +11,7 @@ import cn.keendy.lottery.rpc.dto.ActivityDto;
 import cn.keendy.lottery.rpc.req.ActivityReq;
 import cn.keendy.lottery.rpc.res.ActivityRes;
 import org.apache.dubbo.config.annotation.DubboService;
+import org.springframework.stereotype.Component;
 
 /**
  * @author wangdezhao
@@ -18,6 +19,7 @@ import org.apache.dubbo.config.annotation.DubboService;
  * @description 活动展台
  */
 @DubboService
+@Component
 public class ActivityBooth implements IActivityBooth {
     @Resource
     private IActivityDao activityDao;

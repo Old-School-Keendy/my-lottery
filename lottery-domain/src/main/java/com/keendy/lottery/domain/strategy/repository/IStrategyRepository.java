@@ -6,4 +6,5 @@ package com.keendy.lottery.domain.strategy.repository;
  * @description
  */
 public interface IStrategyRepository {
+     // todo
 }

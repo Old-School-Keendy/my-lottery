@@ -33,7 +33,7 @@
                 #{stockCount}, #{takeCount}, #{state}, #{creator})
     </insert>
 
-    <select id="selectOneByActivityId" parameterType="java.lang.Long" resultMap="activity">
+    <select id="selectOneByActivityId" parameterType="java.lang.Long" resultType="cn.keendy.lottery.infrastructure.po.Activity">
         SELECT
         <include refid="base_column"/>
         FROM activity

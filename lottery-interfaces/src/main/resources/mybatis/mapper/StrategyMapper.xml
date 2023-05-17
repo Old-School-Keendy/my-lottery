@@ -18,10 +18,10 @@
         grant_date, ext_info , create_time, update_time
     </sql>
 
-    <select id="selectOneByStrategyId" parameterType="java.lang.Long" resultMap="strategy">
+    <select id="selectOneByStrategyId" parameterType="java.lang.Long" resultType="cn.keendy.lottery.infrastructure.po.Strategy">
         SELECT
         <include refid="base_column"/>
         FROM strategy
-        WHERE strategyId = #{strategyId}
+        WHERE strategy_id = #{strategyId}
     </select>
 </mapper>

@@ -97,4 +97,17 @@ public class ActivityDto {
         this.state = state;
     }
 
+    @Override
+    public String toString() {
+        return "ActivityDto{" +
+            "activityId=" + activityId +
+            ", activityName='" + activityName + '\'' +
+            ", activityDesc='" + activityDesc + '\'' +
+            ", beginDateTime=" + beginDateTime +
+            ", endDateTime=" + endDateTime +
+            ", stockCount=" + stockCount +
+            ", takeCount=" + takeCount +
+            ", state=" + state +
+            '}';
+    }
 }

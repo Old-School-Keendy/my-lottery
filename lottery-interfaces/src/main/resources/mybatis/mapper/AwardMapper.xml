@@ -17,14 +17,14 @@
         id, award_id, award_type, award_count, award_name, award_content, create_time, update_time
     </sql>
 
-    <select id="selectOneById" parameterType="java.lang.Long" resultMap="award">
+    <select id="selectOneById" parameterType="java.lang.Long" resultType="cn.keendy.lottery.infrastructure.po.Award">
         SELECT
                 id, awardId, awardType, awardCount, awardName, awardContent, createTime, updateTime
         FROM award
         WHERE id = #{id}
     </select>
 
-    <select id="selectOneByAwardId" parameterType="java.lang.Long" resultMap="award">
+    <select id="selectOneByAwardId" parameterType="java.lang.Long" resultType="cn.keendy.lottery.infrastructure.po.Award">
         SELECT
         id, awardId, awardType, awardCount, awardName, awardContent, createTime, updateTime
         FROM award
